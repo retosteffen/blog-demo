@@ -10,12 +10,12 @@
 @endif
   <meta name="keywords" content="blog, {{$blogPost->tags->pluck('name')->implode(', ')}}">
   <meta name="author" content="{{$blogPost->author->name}}">
-  <link rel="canonical" href=@include('laravel-blog::post_link',['item'=>$blogPost])>
+  <link rel="canonical" href="{{URL::current()}}">
   <meta property="og:locale" content="{{config('laravel-blog.locale')}}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{{$blogPost->title}}">
   <meta property="og:description" content="{{$blogPost->excerpt}}">
-  <meta property="og:url" content=@include('laravel-blog::post_link',['item'=>$blogPost])>
+  <meta property="og:url" content="{{URL::current()}}">
   <meta property="og:site_name" content="{{config('laravel-blog.site_name')}}">
   <meta property="article:publisher" content="{{config('laravel-blog.facebook_name')}}">
   <meta property="article:author" content="{{config('laravel-blog.facebook_name')}}">
