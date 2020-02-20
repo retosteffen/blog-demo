@@ -10,22 +10,22 @@
 
     <form method="POST" action="{{ config('laravel-blog.route') }}"  enctype="multipart/form-data">
       @csrf
-      <div>
+      <div class='form-group'>
         <label for="title">{{__('laravel-blog::laravel-blog.title')}}</label>
         <input type="text" name="title" value="{{old('title')}}">
       </div>
-      <div>
+      <div class='form-group'>
         <label for="content">{{__('laravel-blog::laravel-blog.content')}}</label>
         <textarea name="content" rows="10" cols="100">{{old('content')}}</textarea>
       </div>
 
-      <div>
+      <div class='form-group'>
         <label for="excerpt">{{__('laravel-blog::laravel-blog.excerpt')}}</label>
         <textarea name="excerpt" rows="4" cols="100">{{old('excerpt')}}</textarea>
         <div><small id="excerpt_idHelp">{{__('laravel-blog::laravel-blog.excerpt_help')}}</small></div>
       </div>
 
-      <div>
+      <div class='form-group'>
         <label for="category">{{__('laravel-blog::laravel-blog.category')}}</label>
         <select id="category" name="category">
           <option value="">----</option>
@@ -34,11 +34,11 @@
             @endforeach
           </select>
         </div>
-        <div>
+        <div class='form-group'>
           <label for="image">{{__('laravel-blog::laravel-blog.image')}}</label>
           <input type="file" name="image" id='image'/>
         </div>
-        <div>
+        <div class='form-group'>
           <label for="tags_id">{{__('laravel-blog::laravel-blog.tags')}}</label>
           <select multiple id="tags_id" name="tags[]">
             @foreach ($tags as $tag)
@@ -47,16 +47,16 @@
             </select><div>
               <small id="tags_idHelp">{{__('laravel-blog::laravel-blog.multi_select')}}</small></div>
             </div>
-            <div>
+            <div class='form-group'>
               <input type="checkbox" id="published" name="published">
 
               <label for="published">{{__('laravel-blog::laravel-blog.published')}}</label>
             </div>
-            <div>
-              <button type="submit">{{__('laravel-blog::laravel-blog.save_post')}}</button>
+            <div class='form-group'>
+              <button class='btn btn-primary btn-sm' type="submit">{{__('laravel-blog::laravel-blog.save_post')}}</button>
             </div>
-            <div>
-              <a href="{{url()->previous()}}">{{__('laravel-blog::laravel-blog.cancel')}}</a>
+            <div class='form-group'>
+              <a class='btn btn-secondary btn-sm' href="{{url()->previous()}}">{{__('laravel-blog::laravel-blog.cancel')}}</a>
             </div>
 
             @include('laravel-blog::errors')

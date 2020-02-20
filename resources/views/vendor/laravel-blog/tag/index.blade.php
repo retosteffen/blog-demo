@@ -12,11 +12,11 @@
       <li>{{$tag->name}} <form method="POST" action="{{ config('laravel-blog.adminroute') }}/tags/{{$tag->id}}/">
         @method('DELETE')
         @csrf
-        <div>
-          <button type="submit" onclick="return confirm('{{__('laravel-blog::laravel-blog.are_you_sure')}}');"><i class="fas fa-trash"></i> {{__('laravel-blog::laravel-blog.delete_tag')}}</button>
+        <div class='form-group'>
+          <button class='btn btn-primary btn-sm' type="submit" onclick="return confirm('{{__('laravel-blog::laravel-blog.are_you_sure')}}');"><i class="fas fa-trash"></i> {{__('laravel-blog::laravel-blog.delete_tag')}}</button>
         </div>
       </form>
-      <a href='{{ config('laravel-blog.adminroute') }}/tags/{{$tag->id}}/edit'>{{__('laravel-blog::laravel-blog.edit_tag')}}</a>
+      <a class='btn btn-primary btn-sm' href='{{ config('laravel-blog.adminroute') }}/tags/{{$tag->id}}/edit'>{{__('laravel-blog::laravel-blog.edit_tag')}}</a>
     </li>
   @endforeach
 </ul>

@@ -10,15 +10,15 @@
   <form method="POST" action="{{ config('laravel-blog.adminroute') }}/tags/{{$tag->id}}">
     @csrf
     @method('PATCH')
-    <div>
+    <div class="form-group">
       <label for="name">{{__('laravel-blog::laravel-blog.name')}}</label>
       <input type="text" name="name" value="{{$tag->name}}">
     </div>
-    <div>
-      <button type="submit">{{__('laravel-blog::laravel-blog.edit_tag')}}</button>
+    <div class="form-group">
+      <button class='btn btn-primary btn-sm' type="submit">{{__('laravel-blog::laravel-blog.edit_tag')}}</button>
     </div>
-    <div>
-      <a href="{{url()->previous()}}">{{__('laravel-blog::laravel-blog.cancel')}}</a>
+    <div class="form-group">
+      <a class='btn btn-secondary btn-sm' href="{{url()->previous()}}">{{__('laravel-blog::laravel-blog.cancel')}}</a>
     </div>
     @include('laravel-blog::errors')
   </form>
