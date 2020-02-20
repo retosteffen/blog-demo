@@ -28,13 +28,13 @@
   <meta property="article:published_time" content="{{$blogPost->published_at}}">
   <meta property="article:modified_time" content="{{$blogPost->updated_time}}">
   <meta property="og:updated_time" content="{{$blogPost->updated_time}}">
-  <meta property="og:image" content="">
-  <meta property="og:image:secure_url" content="">
+  <meta property="og:image" content="{{ asset('storage/'.$blogPost->image) }}">
+  <meta property="og:image:secure_url" content="{{ asset('storage/'.$blogPost->image) }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="{{$blogPost->excerpt}}">
   <meta name="twitter:title" content="{{$blogPost->title}}">
   <meta name="twitter:site" content="{{config('laravel-blog.twitter_handle')}}">
-  <meta name="twitter:image" content="">
+  <meta name="twitter:image" content="{{ asset('storage/'.$blogPost->image) }}">
   <meta name="twitter:creator" content="{{config('laravel-blog.twitter_handle')}}">
 
 
