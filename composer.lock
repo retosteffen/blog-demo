@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b527d3936d725e37d44fcad58cfebf58",
+    "content-hash": "153b90c1e611065faefdee0298a6626b",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1514,16 +1514,16 @@
         },
         {
             "name": "retosteffen/laravel-blog",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/retosteffen/laravel-blog.git",
-                "reference": "dc53e2d9fd6e75b17b96b82a9a7ee43323b51fc7"
+                "reference": "99b232a5eb516591702995a9e48f0e9d6d613ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/retosteffen/laravel-blog/zipball/dc53e2d9fd6e75b17b96b82a9a7ee43323b51fc7",
-                "reference": "dc53e2d9fd6e75b17b96b82a9a7ee43323b51fc7",
+                "url": "https://api.github.com/repos/retosteffen/laravel-blog/zipball/99b232a5eb516591702995a9e48f0e9d6d613ec6",
+                "reference": "99b232a5eb516591702995a9e48f0e9d6d613ec6",
                 "shasum": ""
             },
             "require": {
@@ -1570,7 +1570,7 @@
                 "laravel-blog",
                 "retosteffen"
             ],
-            "time": "2020-02-20T09:08:44+00:00"
+            "time": "2020-02-20T14:04:19+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
