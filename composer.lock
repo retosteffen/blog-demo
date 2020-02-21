@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "153b90c1e611065faefdee0298a6626b",
+    "content-hash": "1edf74e954a6aa5c9742ae23925d8ffe",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1427,16 +1427,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.9.2",
+            "version": "3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb"
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7779489a47d443f845271badbdcedfe4df8e06fb",
-                "reference": "7779489a47d443f845271badbdcedfe4df8e06fb",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7e1633a6964b48589b142d60542f9ed31bd37a92",
+                "reference": "7e1633a6964b48589b142d60542f9ed31bd37a92",
                 "shasum": ""
             },
             "require": {
@@ -1510,20 +1510,20 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2019-12-17T08:18:51+00:00"
+            "time": "2020-02-21T04:36:14+00:00"
         },
         {
             "name": "retosteffen/laravel-blog",
-            "version": "0.2.1",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/retosteffen/laravel-blog.git",
-                "reference": "99b232a5eb516591702995a9e48f0e9d6d613ec6"
+                "reference": "d308643a96339881ab5cdb4949866a1a64fdb5d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/retosteffen/laravel-blog/zipball/99b232a5eb516591702995a9e48f0e9d6d613ec6",
-                "reference": "99b232a5eb516591702995a9e48f0e9d6d613ec6",
+                "url": "https://api.github.com/repos/retosteffen/laravel-blog/zipball/d308643a96339881ab5cdb4949866a1a64fdb5d4",
+                "reference": "d308643a96339881ab5cdb4949866a1a64fdb5d4",
                 "shasum": ""
             },
             "require": {
@@ -1570,7 +1570,7 @@
                 "laravel-blog",
                 "retosteffen"
             ],
-            "time": "2020-02-20T14:04:19+00:00"
+            "time": "2020-02-21T09:16:16+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
