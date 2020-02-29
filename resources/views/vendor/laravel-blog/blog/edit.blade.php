@@ -43,7 +43,7 @@
           <img src="{{ asset('storage/'.$blogPost->image) }}" width='100px'>
         </div>
       @endif
-      <div class='form-group'
+      <div class='form-group'>
         <label for="alt_text">{{__('laravel-blog::laravel-blog.alt_text')}}</label>
         <input type="text" name="alt_text" value="{{$blogPost->alt_text}}">
       </div>
